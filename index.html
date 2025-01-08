@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Website</title>
+
+    <!-- my style -->
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- my fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Rakensa<span>Dwifa</span>();</a>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact Me</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#hamburger" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="hero" id="about">
+      <main>
+        <div class="row">
+          <div class="profil">
+            <img src="img/profile.jpg" alt="profile" class="profile" />
+          </div>
+          <div class="content">
+            <h1>Rakensa Dwifa Noverdiastra</h1>
+            <h2>Front End Developer</h2>
+            <p>
+              Hi, everyone. My name is Rakensa Dwifa Noverdiastra. I from
+              Sidoarjo, East Java. I'm 21 years old. I studied at Telkom
+              University Bandung. Majoring at Physics Engineering and sophomore
+              in this year.
+            </p>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!-- Skills  section-->
+    <section class="skills" id="skills">
+      <h1>SKILLS</h1>
+      <div class="container">
+        <div class="item">
+          <img src="img/html1.png" alt="html" class="html" />
+          <div class="text">HTML</div>
+        </div>
+        <div class="item">
+          <img src="img/css1.png" alt="css" class="css" />
+          <div class="text">CSS</div>
+        </div>
+        <div class="item">
+          <img src="img/js.png" alt="js" class="js" />
+          <p>Javascript</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+      <h1>Contact Me</h1>
+      <p>
+        If you have something to say, please fill this form. thank you!!! ^_^
+      </p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.60965050534!2d107.56075514178632!3d-6.903271952261035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Kota%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1735469726736!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"></iframe>
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" id="nama" placeholder="Name" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="Email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="Phone number" />
+          </div>
+          <div class="input-group">
+            <i data-feather="type"></i>
+            <input type="text" placeholder="Say something" />
+          </div>
+          <button type="submit">send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+      <div class="socials">
+        <a href="https://wa.me/+6281231274643" class="whatsapp" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/rakensadwifa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          class="instagram"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.tiktok.com/@kensaaaaaaaa"
+          class="tiktok"
+          target="_blank"
+          ><i class="fa-brands fa-tiktok"></i
+        ></a>
+      </div>
+
+      <div class="credits">
+        <p>Created by <span>Rakensa Dwifa</span> | &copy; 2024.</p>
+      </div>
+    </footer>
+    <!-- feather icons -->
+    <script>
+      feather.replace()
+    </script>
+
+    <!-- my javascript -->
+    <script src="Javascript/script.js"></script>
+  </body>
+</html>
