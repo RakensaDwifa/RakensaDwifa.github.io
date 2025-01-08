@@ -3,7 +3,7 @@
   --black: #0b1024;
   --white: #f0f1eb;
   --grey: #b3b6bb;
-  --bg: #2159a2;
+  --bg: #051328;
 }
 
 * {
@@ -33,7 +33,7 @@ body {
   max-width: 300px;
   max-height: 800px;
   background: linear-gradient(45deg, #050d2e20 50%, #5974e050 100%);
-  box-shadow: 0 0 25px 5px #e5e5ea50;
+  box-shadow: 0 0 25px 5px #56567450;
   border: 1px solid transparent;
   border-radius: 30px;
   overflow: hidden;
