@@ -1,0 +1,169 @@
+:root {
+  --yellow: #e28c27;
+  --black: #0b1024;
+  --white: #f0f1eb;
+  --grey: #b3b6bb;
+  --bg: #041327;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  letter-spacing: -1px;
+  background-color: var(--bg);
+  color: var(--grey);
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 500px;
+  padding: 100px;
+}
+
+.nft {
+  user-select: none;
+  max-width: 300px;
+  max-height: 800px;
+  background: linear-gradient(45deg, #050d2e20 50%, #5974e050 100%);
+  box-shadow: 0 0 25px 5px #4f52d850;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: 0.7s all;
+}
+
+.nft hr {
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid rgb(86, 86, 226);
+  margin: 10px 0 10px;
+}
+
+.nft .main {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border: none;
+  box-shadow: none;
+}
+
+.nft .main .gojo-img,
+.itadori {
+  border-radius: 20px;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 350px;
+}
+
+.nft .main h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: rgb(69, 112, 240);
+}
+
+.nft .main p {
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  margin-bottom: 5px;
+}
+
+.nft .main .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nft .main .info .power p {
+  display: none;
+  align-items: center;
+  color: var(--yellow);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.nft .main .info .duration p {
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+}
+
+.nft .main .creator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.nft .main .creator img {
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+
+.nft .main .creator p {
+  align-items: center;
+  margin-top: 20px;
+}
+
+.nft .main .creator span {
+  color: rgb(55, 175, 249);
+  font-weight: 700;
+}
+
+.nft ::before {
+  position: absolute;
+  content: "";
+  box-shadow: 30px 70px 75px 40px #ffffff0e;
+  top: -10%;
+  left: -100%;
+  transform: rotate(-45deg);
+  height: 110rem;
+  transition: 0.8s all;
+}
+
+.container :hover {
+  border: 1px solid #ffffff20;
+  box-shadow: 0px 0px 60px 30px #4f52d850;
+  transform: scale(1.015);
+  filter: brightness(1);
+}
+
+.nft :hover {
+  border: none;
+  box-shadow: none;
+}
+
+.container :hover ::before {
+  filter: brightness(0.3);
+  top: -100%;
+  left: 200%;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 65.5%;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 100px;
+  }
+}
