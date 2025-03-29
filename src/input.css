@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
-
 body {
   font-family: "Inter", sans-serif;
 }
@@ -12,7 +11,7 @@ body {
 }
 
 .hamburger-line {
-  @apply my-2 block h-[2px] w-[30px] bg-slate-800;
+  @apply my-2 block h-[2px] w-[30px] bg-slate-800 dark:bg-white;
 }
 
 .hamburger-active > span:nth-child(1) {
@@ -25,6 +24,6 @@ body {
   @apply -rotate-45;
 }
 
-#dark-toggle:checked ~ label div.toggle-circle{
-  @apply translate-x-3
+#dark-toggle:checked ~ label div.toggle-circle {
+  @apply translate-x-3;
 }
