@@ -3,8 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portofolio</title>
+    <title>Rakensa Dwifa Noverdiastra | Web Developer &amp; Engineering Physics Student</title>
+    <meta
+      name="description"
+      content="Portfolio of Rakensa Dwifa Noverdiastra — Engineering Physics student at Telkom University Bandung and web developer passionate about building clean, responsive websites."
+    />
+    <meta name="author" content="Rakensa Dwifa Noverdiastra" />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="canonical" href="https://rakensadwifa.github.io/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rakensadwifa.github.io/" />
+    <meta property="og:site_name" content="Rakensa Dwifa" />
+    <meta property="og:title" content="Rakensa Dwifa Noverdiastra | Web Developer & Engineering Physics Student" />
+    <meta
+      property="og:description"
+      content="Engineering Physics student at Telkom University Bandung and web developer. Check out my latest projects and get in touch!"
+    />
+    <meta property="og:image" content="https://rakensadwifa.github.io/img/profile.webp" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Rakensa Dwifa Noverdiastra | Web Developer" />
+    <meta
+      name="twitter:description"
+      content="Engineering Physics student at Telkom University Bandung and web developer. Check out my latest projects!"
+    />
+    <meta name="twitter:image" content="https://rakensadwifa.github.io/img/profile.webp" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="dist/css/aos.css" />
     <script>
       document.documentElement.classList.toggle(
         "dark",
@@ -13,8 +53,6 @@
             window.matchMedia("(prefers-color-scheme: dark)").matches),
       );
     </script>
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Header Start -->
@@ -33,6 +71,7 @@
               id="hamburger"
               name="hamburger"
               type="button"
+              aria-label="Toggle navigation menu"
               class="absolute right-4 block cursor-pointer lg:hidden"
             >
               <span
@@ -83,8 +122,13 @@
                     <span class="mr-2 lg:text-slate-500 dark:text-white"
                       >light</span
                     >
-                    <input type="checkbox" class="hidden" id="dark-toggle" />
-                    <label for="dark-toggle">
+                    <input
+                      type="checkbox"
+                      class="sr-only"
+                      id="dark-toggle"
+                      aria-label="Toggle dark mode"
+                    />
+                    <label for="dark-toggle" aria-label="Toggle dark mode">
                       <div
                         class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
                       >
@@ -111,22 +155,15 @@
       <div class="container 2xl:px-40">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:mx-auto lg:w-1/2">
-            <h1
-              class="font-semibold text-teal-400 md:text-xl"
-              data-aos="fade-down"
-              data-aos-duration="1500"
-            >
-              Hello World👋, I'am
+            <h1 class="font-semibold text-teal-400 md:text-xl">
+              Hello World👋, I'm
               <span
                 class="mt-4 mb-2 block text-4xl font-bold text-slate-800 dark:text-white"
-                data-aos="fade-up"
-                data-aos-delay="1000"
-                data-aos-duration="500"
                 >Rakensa Dwifa Noverdiastra</span
               >
             </h1>
             <h2 class="mb-4 font-medium text-teal-500 dark:text-sky-400">
-              Undergradueated Engineering Physics & Web Developer
+              Undergraduate Engineering Physics & Web Developer
             </h2>
             <p class="mb-10 font-medium text-slate-600 dark:text-white">
               Learning web programming is easy and fun right?
@@ -140,19 +177,16 @@
               >Get to know me</a
             >
           </div>
-          <div
-            class="w-full lg:w-1/2"
-            data-aos="zoom-in"
-            data-aos-duration="750"
-            data-aos-delay="1300"
-          >
+          <div class="w-full lg:w-1/2">
             <div class="mt-10">
               <img
-                src="img/profile.jpg"
+                src="img/profile.webp"
                 class="mx-auto max-w-full rounded-full"
-                alt="profile photo"
+                alt="Profile photo of Rakensa Dwifa"
                 width="300"
                 height="300"
+                fetchpriority="high"
+                decoding="async"
               />
             </div>
           </div>
@@ -196,8 +230,8 @@
             <p
               class="mb-5 text-justify font-medium text-slate-500 lg:text-lg dark:text-slate-300"
             >
-              you want to discuss something with me? you can contact me through
-              the following social media
+              Do you want to discuss something with me? You can contact me
+              through the following social media
             </p>
             <div
               class="mb-10 flex items-center justify-center lg:justify-start"
@@ -211,6 +245,8 @@
                 <a
                   href="https://www.instagram.com/rakensadwifa/?utm_source=ig_web_button_share_sheet"
                   target="_blank"
+                  rel="noopener"
+                  aria-label="Instagram"
                   class="mr-4 flex h-10 w-10 items-center justify-center rounded-full border-2 border-pink-400 text-pink-700 transition duration-300 ease-in-out hover:bg-pink-700 hover:text-white hover:shadow-md hover:shadow-slate-500"
                 >
                   <svg
@@ -236,6 +272,8 @@
                 <a
                   href="https://www.tiktok.com/@kensaaaaaaaa"
                   target="_blank"
+                  rel="noopener"
+                  aria-label="TikTok"
                   class="mr-4 flex h-10 w-10 items-center justify-center rounded-full border-2 border-black transition duration-300 ease-in-out hover:bg-black hover:text-white hover:shadow-md hover:shadow-slate-500"
                 >
                   <svg
@@ -261,6 +299,8 @@
                 <a
                   href="https://github.com/RakensaDwifa"
                   target="_blank"
+                  rel="noopener"
+                  aria-label="GitHub"
                   class="mr-4 flex h-10 w-10 items-center justify-center rounded-full border-2 border-black transition duration-300 ease-in-out hover:bg-black hover:text-white hover:shadow-md hover:shadow-slate-500"
                 >
                   <svg
@@ -302,18 +342,23 @@
             </p>
           </div>
         </div>
-        <div
-          class="md: mx-auto flex w-full flex-wrap justify-center px-4 2xl:px-40"
-        >
+        <div class="mx-auto flex w-full flex-wrap justify-center px-4 2xl:px-40">
           <!-- First Project -->
           <div class="mb-12 p-4 md:w-1/2" data-aos="fade-down" data-aos-delay="750">
             <div class="overflow-hidden rounded-md shadow-md shadow-slate-500">
-              <img src="img/1.png" alt="personal website" />
+              <img
+                src="img/1.webp"
+                alt="Screenshot of the personal website project"
+                width="1200"
+                height="539"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <h3
               class="mt-4 mb-2 text-center text-xl font-semibold text-slate-700 dark:text-sky-400"
             >
-              <a href=""></a>Personal Website
+              Personal Website
             </h3>
             <p class="text-center font-medium text-slate-500 dark:text-white">
               Made with html, css, and javascript
@@ -346,6 +391,8 @@
                 name="Nama"
                 type="text"
                 id="name"
+                required
+                autocomplete="name"
                 class="w-full rounded-md bg-slate-300 p-3 font-semibold text-slate-700 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 focus:outline-none"
               />
             </div>
@@ -355,6 +402,8 @@
                 name="Email"
                 type="email"
                 id="email"
+                required
+                autocomplete="email"
                 class="w-full rounded-md bg-slate-300 p-3 font-semibold text-slate-700 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 focus:outline-none"
               />
             </div>
@@ -364,8 +413,9 @@
               >
               <textarea
                 name="Pesan"
-                type="text"
-                id="name"
+                id="message"
+                required
+                rows="5"
                 class="h-32 w-full rounded-md bg-slate-300 p-3 font-semibold text-slate-700 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 focus:outline-none"
               ></textarea>
             </div>
@@ -418,7 +468,13 @@
           <div class="mb-12 w-full px-4 text-slate-300 md:w-1/2 lg:px-20">
             <h2 class="mb-5 text-3xl font-bold text-white">Rakensa Dwifa</h2>
             <h3 class="text-xl font-semibold text-teal-300">Contact me</h3>
-            <p>rakensadwifa@gmail.com</p>
+            <p>
+              <a
+                href="mailto:rakensadwifa@gmail.com"
+                class="underline decoration-teal-500 underline-offset-4 hover:text-white"
+                >rakensadwifa@gmail.com</a
+              >
+            </p>
             <p>Jl. Raya Bojongsoang No. 155B</p>
             <p>Bandung</p>
           </div>
@@ -457,6 +513,8 @@
               <a
                 href="https://www.instagram.com/rakensadwifa/?utm_source=ig_web_button_share_sheet"
                 target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
                 class="mr-4 flex h-10 w-10 items-center justify-center rounded-full border-2 border-pink-400 text-pink-700 transition duration-300 ease-in-out hover:bg-pink-700 hover:text-white hover:shadow-md hover:shadow-slate-500"
               >
                 <svg
@@ -476,6 +534,8 @@
               <a
                 href="https://www.tiktok.com/@kensaaaaaaaa"
                 target="_blank"
+                rel="noopener"
+                aria-label="TikTok"
                 class="mr-4 flex h-10 w-10 items-center justify-center rounded-full border-2 border-black bg-white text-black transition duration-300 ease-in-out hover:bg-black hover:text-white hover:shadow-md hover:shadow-slate-500"
               >
                 <svg
@@ -495,6 +555,8 @@
               <a
                 href="https://github.com/RakensaDwifa"
                 target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
                 class="mr-4 flex h-10 w-10 items-center justify-center rounded-full border-2 border-black bg-white transition duration-300 ease-in-out hover:bg-black hover:text-white hover:shadow-md hover:shadow-slate-500"
               >
                 <svg
@@ -536,6 +598,7 @@
     <!-- Back to Top Start -->
     <a
       href="#home"
+      aria-label="Back to top"
       class="fixed right-4 bottom-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-teal-500 p-4 hover:animate-pulse"
       id="to-top"
       ><span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span
@@ -543,21 +606,7 @@
     <!-- Back to Top End -->
 
     <!-- Javascript -->
-    <script src="dist/js/script.js"></script>
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000, // Duration of animations (in ms)
-        once: false, // Whether animation should happen only once - while scrolling down
-        mirror: false, // Whether elements should animate out while scrolling past them
-        easing: "ease-in-out", // Easing function for animations
-        offset: 200, // Offset (in px) from the original trigger point
-        delay: 0, // Delay (in ms) before animation starts
-        refreshOnResize: true, // Refresh AOS on window resize
-        anchorPlacement: "top-bottom", // Defines which position of the element regarding to window should trigger the animation
-      });
-      AOS.refresh();
-    </script>
+    <script src="dist/js/aos.js" defer></script>
+    <script src="dist/js/script.js" defer></script>
   </body>
 </html>
