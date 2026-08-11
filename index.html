@@ -53,6 +53,46 @@
             window.matchMedia("(prefers-color-scheme: dark)").matches),
       );
     </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rakensa Dwifa Noverdiastra",
+        "url": "https://rakensadwifa.github.io/",
+        "image": "https://rakensadwifa.github.io/img/profile.webp",
+        "jobTitle": "Web Developer",
+        "email": "mailto:rakensadwifa@gmail.com",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Telkom University"
+        },
+        "sameAs": [
+          "https://www.instagram.com/rakensadwifa/",
+          "https://www.tiktok.com/@kensaaaaaaaa",
+          "https://github.com/RakensaDwifa"
+        ]
+      }
+    </script>
+
+    <!-- Google Analytics 4 (GA4) -->
+    <!-- Isi GA_MEASUREMENT_ID dengan Measurement ID (G-XXXXXXX) dari analytics.google.com -->
+    <script>
+      const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      if (GA_MEASUREMENT_ID !== "G-XXXXXXXXXX") {
+        const s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_MEASUREMENT_ID;
+        document.head.appendChild(s);
+        gtag("js", new Date());
+        gtag("config", GA_MEASUREMENT_ID);
+      }
+    </script>
   </head>
   <body>
     <!-- Header Start -->
@@ -101,6 +141,13 @@
                     href="#about"
                     class="mx-8 flex py-2 group-hover:text-white lg:text-teal-500 lg:group-hover:text-black dark:text-white dark:group-hover:text-black lg:dark:group-hover:text-teal-500"
                     >About me</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#skills"
+                    class="mx-8 flex py-2 group-hover:text-white lg:text-teal-500 lg:group-hover:text-black dark:text-white dark:group-hover:text-black lg:dark:group-hover:text-teal-500"
+                    >Skills</a
                   >
                 </li>
                 <li class="group">
@@ -163,7 +210,9 @@
               >
             </h1>
             <h2 class="mb-4 font-medium text-teal-500 dark:text-sky-400">
-              Undergraduate Engineering Physics & Web Developer
+              Undergraduate Engineering Physics &amp;
+              <span id="typed-text" aria-live="polite">Web Developer</span
+              ><span class="typed-cursor" aria-hidden="true">|</span>
             </h2>
             <p class="mb-10 font-medium text-slate-600 dark:text-white">
               Learning web programming is easy and fun right?
@@ -171,11 +220,19 @@
                 >Nope. It's difficult!</span
               >
             </p>
-            <a
-              href="#about"
-              class="rounded-full bg-teal-400 px-6 py-3 font-semibold transition duration-300 ease-in-out hover:text-white hover:opacity-80 hover:shadow-lg hover:shadow-slate-500"
-              >Get to know me</a
-            >
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#about"
+                class="rounded-full bg-teal-400 px-6 py-3 font-semibold transition duration-300 ease-in-out hover:text-white hover:opacity-80 hover:shadow-lg hover:shadow-slate-500"
+                >Get to know me</a
+              >
+              <a
+                href="cv/Rakensa-Dwifa-CV.pdf"
+                download
+                class="rounded-full border-2 border-teal-500 px-6 py-3 font-semibold text-teal-600 transition duration-300 ease-in-out hover:bg-teal-500 hover:text-white hover:shadow-lg hover:shadow-slate-500 dark:text-teal-300"
+                >Download CV</a
+              >
+            </div>
           </div>
           <div class="w-full lg:w-1/2">
             <div class="mt-10">
@@ -320,6 +377,68 @@
             </div>
           </div>
         </div>
+
+        <!-- Education & Experience Timeline -->
+        <div class="mx-auto mt-24 w-full max-w-2xl px-4">
+          <h3
+            class="mb-12 text-center text-2xl font-bold text-teal-500"
+            data-aos="fade-down"
+          >
+            Education & Experience
+          </h3>
+          <div class="relative border-l-2 border-teal-400 pl-8">
+            <div class="relative mb-12" data-aos="fade-right">
+              <span
+                class="absolute -left-[1.65rem] top-1.5 block h-3 w-3 rounded-full bg-teal-500 ring-4 ring-teal-200 dark:ring-slate-600"
+              ></span>
+              <h4
+                class="text-xl font-bold text-slate-700 dark:text-white"
+              >
+                Engineering Physics
+              </h4>
+              <p class="font-semibold text-teal-600 dark:text-teal-300">
+                Telkom University, Bandung
+              </p>
+              <p
+                class="mt-1 text-sm font-medium text-slate-500 dark:text-slate-300"
+              >
+                Undergraduate student — [2024] – Present
+              </p>
+              <p
+                class="mt-2 font-medium text-slate-600 dark:text-slate-300"
+              >
+                Studying the fundamentals of physics applied to engineering,
+                while actively developing web development skills alongside my
+                coursework.
+              </p>
+            </div>
+            <div class="relative mb-12" data-aos="fade-right">
+              <span
+                class="absolute -left-[1.65rem] top-1.5 block h-3 w-3 rounded-full bg-teal-500 ring-4 ring-teal-200 dark:ring-slate-600"
+              ></span>
+              <h4
+                class="text-xl font-bold text-slate-700 dark:text-white"
+              >
+                Self-taught Web Developer
+              </h4>
+              <p class="font-semibold text-teal-600 dark:text-teal-300">
+                Personal Projects
+              </p>
+              <p
+                class="mt-1 text-sm font-medium text-slate-500 dark:text-slate-300"
+              >
+                [2024] – Present
+              </p>
+              <p
+                class="mt-2 font-medium text-slate-600 dark:text-slate-300"
+              >
+                Building responsive websites with HTML, CSS, JavaScript and
+                Tailwind CSS — continuously learning modern web development
+                best practices.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- About Section End -->
@@ -369,6 +488,104 @@
     </section>
     <!-- Portofolio Section End -->
 
+    <!-- Skills Section Start -->
+    <section id="skills" class="bg-slate-100 pt-36 pb-32 dark:bg-slate-800">
+      <div class="container">
+        <div class="mx-auto mb-14 max-w-xl px-4 text-center" data-aos="fade-down">
+          <h3 class="mb-2 text-xl font-semibold text-teal-500 md:text-2xl">
+            My Skills
+          </h3>
+          <h2
+            class="mb-2 text-2xl font-bold text-slate-700 md:text-3xl dark:text-sky-400"
+          >
+            Tools & Technologies
+          </h2>
+          <p class="font-medium text-slate-500 md:text-lg dark:text-white">
+            Technologies I use to build things on the web.
+          </p>
+        </div>
+        <div
+          class="flex flex-wrap items-center justify-center gap-4 px-4 2xl:px-40"
+        >
+          <span
+            data-aos="zoom-in"
+            class="rounded-full border-2 border-teal-500 px-6 py-2 font-semibold text-teal-600 transition duration-300 ease-in-out hover:bg-teal-500 hover:text-white dark:text-teal-300"
+            >HTML5</span
+          >
+          <span
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            class="rounded-full border-2 border-teal-500 px-6 py-2 font-semibold text-teal-600 transition duration-300 ease-in-out hover:bg-teal-500 hover:text-white dark:text-teal-300"
+            >CSS3</span
+          >
+          <span
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            class="rounded-full border-2 border-teal-500 px-6 py-2 font-semibold text-teal-600 transition duration-300 ease-in-out hover:bg-teal-500 hover:text-white dark:text-teal-300"
+            >JavaScript</span
+          >
+          <span
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            class="rounded-full border-2 border-teal-500 px-6 py-2 font-semibold text-teal-600 transition duration-300 ease-in-out hover:bg-teal-500 hover:text-white dark:text-teal-300"
+            >Tailwind CSS</span
+          >
+          <span
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            class="rounded-full border-2 border-teal-500 px-6 py-2 font-semibold text-teal-600 transition duration-300 ease-in-out hover:bg-teal-500 hover:text-white dark:text-teal-300"
+            >Git & GitHub</span
+          >
+          <span
+            data-aos="zoom-in"
+            data-aos-delay="500"
+            class="rounded-full border-2 border-teal-500 px-6 py-2 font-semibold text-teal-600 transition duration-300 ease-in-out hover:bg-teal-500 hover:text-white dark:text-teal-300"
+            >Responsive Design</span
+          >
+          <span
+            data-aos="zoom-in"
+            data-aos-delay="600"
+            class="rounded-full border-2 border-teal-500 px-6 py-2 font-semibold text-teal-600 transition duration-300 ease-in-out hover:bg-teal-500 hover:text-white dark:text-teal-300"
+            >Problem Solving</span
+          >
+        </div>
+        <div
+          class="mt-14 flex flex-wrap items-center justify-center gap-3 px-4 2xl:px-40"
+        >
+          <span
+            data-aos="zoom-in-up"
+            class="rounded-md bg-teal-500/10 px-4 py-1.5 text-sm font-semibold text-slate-600 dark:text-slate-200"
+            >Teamwork</span
+          >
+          <span
+            data-aos="zoom-in-up"
+            data-aos-delay="100"
+            class="rounded-md bg-teal-500/10 px-4 py-1.5 text-sm font-semibold text-slate-600 dark:text-slate-200"
+            >Leadership</span
+          >
+          <span
+            data-aos="zoom-in-up"
+            data-aos-delay="200"
+            class="rounded-md bg-teal-500/10 px-4 py-1.5 text-sm font-semibold text-slate-600 dark:text-slate-200"
+            >Communication</span
+          >
+          <span
+            data-aos="zoom-in-up"
+            data-aos-delay="300"
+            class="rounded-md bg-teal-500/10 px-4 py-1.5 text-sm font-semibold text-slate-600 dark:text-slate-200"
+            >Multitasking</span
+          >
+          <span
+            data-aos="zoom-in-up"
+            data-aos-delay="400"
+            class="rounded-md bg-teal-500/10 px-4 py-1.5 text-sm font-semibold text-slate-600 dark:text-slate-200"
+            >Target-Oriented</span
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section End -->
+
     <!-- Contact Section Start -->
     <section id="contact" class="pt-36 pb-32 dark:bg-slate-900">
       <div class="container">
@@ -383,8 +600,19 @@
             </p>
           </div>
         </div>
-        <form name="contact-form">
+        <form name="contact-form" novalidate>
           <div class="w-full lg:mx-auto lg:w-2/3">
+            <!-- Honeypot anti-spam: jangan diisi manusia -->
+            <div class="mb-8 hidden w-full px-4" aria-hidden="true">
+              <label for="website">Website</label>
+              <input
+                type="text"
+                name="website"
+                id="website"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
             <div class="mb-8 w-full px-4">
               <label for="name" class="font-bold text-teal-500">Name</label>
               <input
@@ -395,6 +623,10 @@
                 autocomplete="name"
                 class="w-full rounded-md bg-slate-300 p-3 font-semibold text-slate-700 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 focus:outline-none"
               />
+              <p
+                id="name-error"
+                class="mt-1 hidden text-sm font-semibold text-red-500"
+              ></p>
             </div>
             <div class="mb-8 w-full px-4">
               <label for="email" class="font-bold text-teal-500">Email</label>
@@ -406,6 +638,10 @@
                 autocomplete="email"
                 class="w-full rounded-md bg-slate-300 p-3 font-semibold text-slate-700 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 focus:outline-none"
               />
+              <p
+                id="email-error"
+                class="mt-1 hidden text-sm font-semibold text-red-500"
+              ></p>
             </div>
             <div class="mb-8 w-full px-4">
               <label for="message" class="font-bold text-teal-500"
@@ -418,6 +654,10 @@
                 rows="5"
                 class="h-32 w-full rounded-md bg-slate-300 p-3 font-semibold text-slate-700 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 focus:outline-none"
               ></textarea>
+              <p
+                id="message-error"
+                class="mt-1 hidden text-sm font-semibold text-red-500"
+              ></p>
             </div>
             <div class="w-full px-4" id="submit">
               <button
@@ -468,13 +708,41 @@
           <div class="mb-12 w-full px-4 text-slate-300 md:w-1/2 lg:px-20">
             <h2 class="mb-5 text-3xl font-bold text-white">Rakensa Dwifa</h2>
             <h3 class="text-xl font-semibold text-teal-300">Contact me</h3>
-            <p>
-              <a
-                href="mailto:rakensadwifa@gmail.com"
-                class="underline decoration-teal-500 underline-offset-4 hover:text-white"
-                >rakensadwifa@gmail.com</a
+            <div class="flex items-center gap-2">
+              <p>
+                <a
+                  href="mailto:rakensadwifa@gmail.com"
+                  class="underline decoration-teal-500 underline-offset-4 hover:text-white"
+                  >rakensadwifa@gmail.com</a
+                >
+              </p>
+              <button
+                id="copy-email"
+                type="button"
+                aria-label="Copy email to clipboard"
+                title="Copy email"
+                class="flex h-7 w-7 items-center justify-center rounded-md border border-teal-500/50 text-teal-300 transition duration-300 ease-in-out hover:bg-teal-500 hover:text-white"
               >
-            </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                </svg>
+              </button>
+              <span
+                id="copy-feedback"
+                class="hidden text-sm font-semibold text-teal-300"
+                >Copied!</span
+              >
+            </div>
             <p>Jl. Raya Bojongsoang No. 155B</p>
             <p>Bandung</p>
           </div>
@@ -489,6 +757,11 @@
               <li>
                 <a href="#about" class="mb-3 inline-block hover:text-teal-500"
                   >About</a
+                >
+              </li>
+              <li>
+                <a href="#skills" class="mb-3 inline-block hover:text-teal-500"
+                  >Skills</a
                 >
               </li>
               <li>
