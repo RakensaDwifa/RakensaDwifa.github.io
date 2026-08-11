@@ -138,7 +138,7 @@ copyBtn.addEventListener("click", function () {
 
 // Running Contact Form
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbxEhL5rjWpdiTQaJrn2PAuJSgpEmhvkkLY-UkhlyP1z-LsBPrQk943tlwudvix1MO98/exec";
+  "https://script.google.com/macros/s/AKfycbyHgQMJK0sMRL5_aWZL6Adn9VuO_Vj-qbh73XTJUBdd37uXtCR-MeyFTsJ2D3MRE7XU/exec";
 const form = document.forms["contact-form"];
 const submit = document.querySelector("#submit");
 const loading = document.querySelector("#loading");
